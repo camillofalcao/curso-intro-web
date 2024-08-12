@@ -1,6 +1,6 @@
 # Estilizando um Artigo (com CSS Grid)
 
-Lembre-se de verificar o material para entender o passo a passo das regras implementadas: https://github.com/camillofalcao/curso-intro-web/blob/main/material/02%20-%20CSS/CSS%20-%2004%20-%20Estilizando%20um%20Artigo%20(Com%20CSS%20Grid).pdf
+Lembre-se de verificar o material para entender o passo a passo das regras implementadas. O material pode ser acessado clicando [aqui](https://github.com/camillofalcao/curso-intro-web/blob/main/material/02%20-%20CSS/CSS%20-%2004%20-%20Estilizando%20um%20Artigo%20(Com%20CSS%20Grid).pdf)
 
 Para colocar o código no estado desejado, execute o comando git checkout do respectivo commit. Para voltar para o último commit, execute: **git switch -**
 
