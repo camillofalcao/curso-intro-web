@@ -1,0 +1,54 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+    border-top: solid blueviolet;
+    margin: 0px 20px 0px 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+h2 {
+    font-style: italic;
+    color: blueviolet;
+    font-size: 2em;
+}
+
+#barra_topo {
+    background-color: blueviolet;
+    font-style: italic;
+    font-size: 1.5em;
+    height: 80px;
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 10px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto 300px;
+    gap: 50px;
+    padding: 20px;
+}
+
+#artigo {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#artigo_menu {
+    grid-column: 2;
+    grid-row: 1;
+    padding-top: 20px;
+    top: 20px;
+    left: 50px;
+    position: sticky;
+    align-self: start;
+}
