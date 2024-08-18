@@ -1,0 +1,9 @@
+:root {
+    --destaque: rgb(44, 88, 197);
+    --destaque-compl: rgb(206, 219, 253);
+    --fundo: rgba(44, 88, 197, 0.5);
+    --fundo-compl: rgba(11, 36, 98, 0.5);
+    --comprar: rgb(90, 207, 141);
+    --comprar-compl: rgb(0, 0, 0);
+    --comprar-destaque: rgb(0, 255, 110);
+}
