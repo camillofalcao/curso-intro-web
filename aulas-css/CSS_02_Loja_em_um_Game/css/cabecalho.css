@@ -51,3 +51,47 @@ header>h1 {
     justify-self: center;
     color: var(--destaque-compl);
 }
+
+header .tema-area {
+    display: flex;
+    border: 1px solid black;
+    background: gainsboro;
+    border-radius: 2rem;
+    width: 170px;
+    height: 32px;
+    padding: 3px;
+    position: absolute;
+    top: 19px;
+    right: 120px;
+}
+
+
+header .tema {
+    position: relative;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    left: 0px;
+    transition: 0.3s;
+    margin: 2px;
+}
+
+header .tema-azul {
+    background: var(--destaque-azul);
+}
+
+header .tema-vermelho {
+    background: var(--destaque-vermelho);
+}
+
+header .tema-verde {
+    background: var(--destaque-verde);
+}
+
+header .tema-roxo {
+    background: var(--destaque-roxo);
+}
+
+header .tema-preto {
+    background: var(--destaque-preto);
+}
