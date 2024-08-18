@@ -5,7 +5,6 @@ function trocaTema(tema) {
 
 function registrarTrocadorTema(tema) {
     const elementoTema = document.getElementById(`trocar-tema-${tema}`);
-    console.log(elementoTema);
 
     if (elementoTema) {
         elementoTema.addEventListener('click', () => trocaTema(tema));
