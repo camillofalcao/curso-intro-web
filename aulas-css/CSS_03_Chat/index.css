@@ -1,0 +1,200 @@
+:root {
+    --cor-mensagem-propria: rgb(111, 165, 219);
+    --cor-mensagem-outro: rgb(234, 237, 243);
+    --cor-fundo: rgb(215, 226, 244);
+    --cor-principal: rgb(20, 61, 119);
+    --cor-principal-texto: rgb(227, 235, 241);
+    --cor-cabecalho: rgb(20, 61, 119);
+    --cor-cabecalho-texto: rgb(227, 235, 241);
+    --cor-cabecalho-linha: rgb(111, 165, 219);
+    --cor-body: rgb(64, 59, 59);
+    --cor-contato: rgb(185, 187, 193);
+}
+
+body {
+    margin: 0px;
+    background-color: var(--cor-body);
+}
+
+header {
+    position: fixed;
+    background-color: var(--cor-cabecalho);
+    width: 100vw;
+    padding: 10px;
+    height: 80px;
+    top: 0px;
+    left: 0px;
+    border-bottom: solid var(--cor-cabecalho-linha) 8px;
+    z-index: 1;
+}
+
+header h1 {
+    top: 0px;
+    color: var(--cor-cabecalho-texto);
+}
+
+.container {
+    position: fixed;
+    left: 0px;
+    top: 108px;
+    padding: 50px;
+    border-bottom: solid 2px;
+    border-right: solid 2px;
+    border-radius: 0px 0px 50px 0px;
+    width: calc(100% - 400px);
+    height: calc(100% - 212px);
+    background-color: var(--cor-fundo);
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-msg {
+    height: 95%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+}
+
+.container-add {
+    display: grid;
+    grid-template-columns: auto 20px;
+    gap: 5px;
+}
+
+.container-add>textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    resize: none;
+}
+
+.container-add>button {
+    align-self: flex-end;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.container-add>button>svg {
+    position: relative;
+    top: 4px;
+    left: 5px;
+}
+
+.msg {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+.msg p {
+    position: relative;
+    padding: 12px;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.msg-propria {
+    right: 30px;
+    justify-content: right;
+}
+
+.msg-propria p {
+    background: var(--cor-mensagem-propria);
+    position: relative;
+}
+
+.msg-outro {
+    left: 30px;
+    justify-content: left;
+}
+
+.msg-outro p {
+    background: var(--cor-mensagem-outro);
+}
+
+.msg-propria p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(135deg, var(--cor-mensagem-propria) 0%, var(--cor-mensagem-propria) 50%, transparent 50%, transparent);
+}
+
+.msg-outro p::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(225deg, var(--cor-mensagem-outro) 0%, var(--cor-mensagem-outro) 50%, transparent 50%, transparent);
+}
+
+.contatos {
+    position: absolute;
+    right: 0px;
+    top: 108px;
+    width: 295px;
+    height: auto;
+}
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    background-color: var(--cor-contato);
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid var(--cor-principal-texto) 1px;
+}
+
+.contato>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato>div>div {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-size: large;
+    align-items: center;
+    width: auto;
+    margin-top: 15px;
+}
+
+.contato>div>p {
+    font-size: large;
+
+}
+
+.contato-selecionado {
+    background-color: var(--cor-principal);
+    color: var(--cor-principal-texto);
+}
+
+.contato-selecionado::before {
+    content: '<';
+    font-size: 2em;
+    font-weight: bolder;
+    position: relative;
+    left: 0px;
+    margin-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.contato>div>div>img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
